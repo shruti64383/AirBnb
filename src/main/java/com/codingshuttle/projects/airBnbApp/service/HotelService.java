@@ -10,4 +10,6 @@ public interface HotelService {
     HotelDto updateHotelById(Long hotelId, HotelDto hotelDto);
 
     Void deleteHotelById(Long hotelId);
+
+    Void activateHotel(Long hotelId);
 }

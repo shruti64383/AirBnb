@@ -45,4 +45,11 @@ public class HotelController {
         hotelService.deleteHotelById(hotelId);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
+
+    @PatchMapping("/{hotelId}")
+    public ResponseEntity<Void> activateHotel(@PathVariable Long hotelId){
+        log.info("Activating Hotel With Id:{}", hotelId);
+        hotelService.activateHotel(hotelId);
+        return new ResponseEntity<>(HttpStatus.ACCEPTED);
+    }
 }
