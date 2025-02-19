@@ -6,5 +6,5 @@ public interface InventoryService {
 
     Void initializeRoomForAYear(Room room);
 
-    Void deleteFutureInventories(Room room);
+    Void deleteAllInventories(Room room);
 }
